@@ -1,9 +1,7 @@
+ <%
+ if(!(session == null || session.getAttribute("loggedin")==null|| ((Boolean) session.getAttribute("loggedin"))==false )){
 
-<%HttpSession s=request.getSession(true);
-if(s.getAttribute("loggedin")==null||((Boolean)s.getAttribute("loggedin"))==false){
-response.sendRedirect("Index.html");}%>
-
-
+  %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,11 +19,12 @@ response.sendRedirect("Index.html");}%>
     <![endif]-->
   </head>
   <body>
+
     <div class="container">
       <header>
         <h1><a href="./">Gallery</a></h1>
       </header>
-        Willkommen <%= s.getAttribute("userID").toString()%>
+        Willkommen <%= session.getAttribute("userID").toString()%>
       <div id="main" role="main">
 
         <div id="albums">
@@ -51,6 +50,9 @@ response.sendRedirect("Index.html");}%>
       <footer>
         <p>      </footer>
     </div>
-
+<%}
+else{
+out.println("Sie haben keinen Zugriff!!!1111einseinseinself!");
+}%>
   </body>
 </html>
