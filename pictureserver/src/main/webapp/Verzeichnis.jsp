@@ -53,6 +53,8 @@
 <%}
 else{
 out.println("Sie haben keinen Zugriff!!!1111einseinseinself!");
+response.sendRedirect("Index.html");
+return;
 }%>
   </body>
 </html>
