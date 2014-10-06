@@ -1,0 +1,106 @@
+<!DOCTYPE html> <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MixMaPix</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+     	<script src="js/vendor/jquery-1.9.1.min.js"></script>
+   
+        <style type="text/css">
+			body {
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+    </head>
+    <body class="loading">
+       
+       	<div id="preload">
+	       	<img src="img/bcg_slide-1.jpg">
+	       	<img src="img/bcg_slide-2.jpg">
+	       	<img src="img/bcg_slide-3.jpg">
+	       	<img src="img/bcg_slide-4.jpg">
+       	</div>
+        
+       	
+       	<main>
+       	 	
+            
+	        <section id="slide-1" class="homeSlide">
+	        	<div class="bcg">
+		        	<div class="hsContainer">
+			    		<div class="hsContent">
+				    	<img src="img/Logo.png">
+			    		</div>
+                        <div class="hsContent2">
+				    	     <div class="registry" id="ichbins">
+
+                                 <form action="/pictureserver/register" method="POST"> <input type="text" placeholder="Vorname" name="vorname" id="vorname"><br>
+ 
+<input type="text" placeholder="Nachname" name="nachname" id="nachname"><br>
+
+<input type="text" placeholder="Email" name="email" id="email"><br>
+
+<input type="text" placeholder="Benutzername" name="user" id="user" ><br>
+                  
+		  <input type="password" placeholder="Setzen Sie ihr Passwort" name="password" id="password"><br>
+				<input type="submit" value="Registrierung" id="submit">
+          </form>
+			</div>
+        
+        </div>
+         
+         <div class="hsContent3">
+          	<div class="login"> 
+         	<a href="file:///C|/Users/muelleto/Desktop/Resturkturiert%20Fallbeispiel/User.html"><img src="img/user.png" height="35" width="35"></a>
+         	</div>
+        
+         
+		</div>
+        <div class="hsContent4">
+        <img src="img/RE.png" height="850" width="850">
+        </div>
+        
+        <div class="hsContent5">
+               <div class="registry" id="ichbins2">             
+
+          <form action="/pictureserver/Login" method="POST">
+          <input type="text" placeholder="Benutzer" name="user"><br>
+
+		  <input type="password" placeholder="Passwort" name="password"><br>
+				<input type="submit" value="Login">
+              </form>
+			</div>
+                  </div>
+                   
+        <div class="hsContent6">
+                   <div class="login">
+                 
+                   </div>
+       </div>
+                   
+       <div class="hsContent7">
+                    <div class="login" id="zeigen">
+				<input type="button" value="Einloggen">         
+	               </div>
+      </div>
+            </div>
+        
+        
+		        	</div>
+	        	</div>
+		    </section>
+		    
+		</main>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/_main.js"></script>
+
+    </body>
+</html>
